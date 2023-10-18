@@ -1,6 +1,6 @@
 train_file: 'data/MVSA_Single/train.json'
-val_file: 'data/MVSA_Single/test.json'                
-test_file: 'data/MVSA_Single/dev.json'
+val_file: 'data/MVSA_Single/dev.json'                
+test_file: 'data/MVSA_Single/test.json'
             
 bert_config: 'configs/config_bert.json'
 fusion_bert_config: 'configs/config_bert_fusion.json'
