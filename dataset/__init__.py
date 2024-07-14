@@ -4,7 +4,7 @@ from torchvision import transforms
 from PIL import Image
 
 from dataset.caption_dataset import pretrain_dataset
-from dataset.msd_dataset import msd_dataset
+from dataset.epmc_dataset import epmc_dataset
 
 from dataset.randaugment import RandomAugment
 
@@ -38,10 +38,10 @@ def create_dataset(dataset, config):
         dataset = pretrain_dataset(config['train_file'], pretrain_transform)                  
         return dataset                     
 
-    elif dataset=='msd':   
-        train_dataset = msd_dataset(config['train_file'], train_transform)  
-        val_dataset = msd_dataset(config['val_file'], test_transform)  
-        test_dataset = msd_dataset(config['test_file'], test_transform)                
+    elif dataset=='epmc':   
+        train_dataset = epmc_dataset(config['train_file'], train_transform)  
+        val_dataset = epmc_dataset(config['val_file'], test_transform)  
+        test_dataset = epmc_dataset(config['test_file'], test_transform)                
         return train_dataset, val_dataset, test_dataset   
 
 
