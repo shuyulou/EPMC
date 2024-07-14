@@ -19,7 +19,7 @@ import numpy as np
 import random
 
 
-class SMF(nn.Module):
+class EPMC(nn.Module):
     def __init__(self,                 
                  text_encoder = None,
                  tokenizer = None,
