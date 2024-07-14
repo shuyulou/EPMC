@@ -24,7 +24,7 @@ from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
 
-from models.model_EPMC import EPMC
+from models.model_epmc import EPMC
 from models.vit import interpolate_pos_embed
 from models.tokenization_bert import BertTokenizer
 
@@ -149,7 +149,7 @@ def main(args, config):
     cudnn.benchmark = True
     
     print("Creating dataset")
-    datasets = create_dataset('msd', config)
+    datasets = create_dataset('epmc', config)
     
     if args.distributed:
         num_tasks = utils.get_world_size()
