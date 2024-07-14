@@ -22,7 +22,7 @@ from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
 
-from models.model_pretrain import SMF
+from models.model_pretrain import EPMC
 from models.vit import interpolate_pos_embed
 from models.tokenization_bert import BertTokenizer
 
@@ -124,7 +124,7 @@ def main(args, config):
     tokenizer = BertTokenizer.from_pretrained(args.text_encoder)
 
     print("Creating model")
-    model = SMF(config=config, text_encoder=args.text_encoder, tokenizer=tokenizer, fusion_encoder=args.fusion_encoder, init_deit=True)
+    model = EPMC(config=config, text_encoder=args.text_encoder, tokenizer=tokenizer, fusion_encoder=args.fusion_encoder, init_deit=True)
 
     model = model.to(device)   
 
