@@ -26,7 +26,7 @@ def compute_class_weights(histogram):
         classWeights[i] = 1 / (np.log(1.10 + normHist[i]))
     return classWeights
 
-class SMF(nn.Module):
+class EPMC(nn.Module):
     def __init__(self,                 
                  text_encoder = None,
                  tokenizer = None,
