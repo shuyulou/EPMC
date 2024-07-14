@@ -1,6 +1,6 @@
-## Synchronizing Modalities before Fusion: A New Contrastive Learning Approach to Multimodal Sentiment Detection
+## Ensuring Pre-Fusion Modality Consistency: A New Contrastive Learning Approach to Multimodal Sentiment Detection
 
-This is the repository of Synchronizing Modalities before Fusion: A New Contrastive Learning Approach to Multimodal Sentiment Detection
+This is the repository of Ensuring Pre-Fusion Modality Consistency: A New Contrastive Learning Approach to Multimodal Sentiment Detection
 
 ![image](SMF.png)
 
@@ -24,9 +24,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env Pretrain.py --co
 ### Multimodal Sentiment Detection:
 train:
 ```shell
-python -m torch.distributed.launch --nproc_per_node=8 --use_env MSD.py --config ./configs/MSD.yaml --output_dir output/MSD 
+python -m torch.distributed.launch --nproc_per_node=8 --use_env EPMC.py --config ./configs/MSD.yaml --output_dir output/MSD 
 ```
 eval:
 ```shell
-python -m torch.distributed.launch --nproc_per_node=8 --use_env MSD.py --config ./configs/MSD.yaml --output_dir output/MSD --checkpoint ./output/MSD/checkpoint_best.pth --eval 1
+python -m torch.distributed.launch --nproc_per_node=8 --use_env EPMC.py --config ./configs/MSD.yaml --output_dir output/MSD --checkpoint ./output/MSD/checkpoint_best.pth --eval 1
 ```  
