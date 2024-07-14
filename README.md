@@ -14,7 +14,7 @@ timm 0.4.9
 ### Download:
 MSCOCO: http://cocodataset.org/
 MVSA-*: http://mcrlab.net/research/mvsa-sentiment-analysis-on-multi-view-social-data/
-RU-senti: coming soon
+RU-senti: https://drive.google.com/file/d/1ED1SHlYRVhduDi14-f2Xp0Mk35PdjQJU/view
 
 ### Pre-training:
 ```shell
