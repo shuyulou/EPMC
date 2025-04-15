@@ -2,7 +2,7 @@
 
 This is the repository of Ensuring Pre-Fusion Modality Consistency: A New Contrastive Learning Approach to Multimodal Sentiment Detection
 
-![image](SMF.png)
+![image](EPMC.png)
 
 ### Requirements:
 ```shell
