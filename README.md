@@ -20,7 +20,7 @@ RU-senti: https://drive.google.com/file/d/1ED1SHlYRVhduDi14-f2Xp0Mk35PdjQJU/view
 
 HFM: https://github.com/wrk226/pytorch-multimodal_sarcasm_detection
 
-Our checkpoint: 
+Our checkpoint: https://drive.google.com/file/d/1I2Ivlz3qqLp3puD6ZKT1lmOMmF2KlwMj/view?usp=drive_link
 
 ### Pre-training:
 ```shell
