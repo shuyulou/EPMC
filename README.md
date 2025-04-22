@@ -13,8 +13,14 @@ timm 0.4.9
 
 ### Download:
 MSCOCO: http://cocodataset.org/
+
 MVSA-*: http://mcrlab.net/research/mvsa-sentiment-analysis-on-multi-view-social-data/
+
 RU-senti: https://drive.google.com/file/d/1ED1SHlYRVhduDi14-f2Xp0Mk35PdjQJU/view
+
+HFM: https://github.com/wrk226/pytorch-multimodal_sarcasm_detection
+
+Our checkpoint: 
 
 ### Pre-training:
 ```shell
